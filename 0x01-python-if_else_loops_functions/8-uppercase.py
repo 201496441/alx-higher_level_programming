@@ -1,19 +1,13 @@
 #!/usr/bin/python3
-def uppercase(s):
-    # Initialize an empty string to hold the uppercase version of the string
-    upper_s = ""
-    
-    # Loop through each character in the string
-    for c in s:
-        # Convert the character to its uppercase equivalent using its ASCII code
-        if ord(c) >= 97 and ord(c) <= 122:
-            upper_c = chr(ord(c) - 32)
-        else:
-            upper_c = c
-        
-        # Append the uppercase character to the new string
-        upper_s += upper_c
-    
-    # Print the uppercase string followed by a newline character
-    print("{}\n".format(upper_s))
+def to_uper(character):
+    if ord(character) >= 97 and ord(character) <= 122:
+        return (ord(character) - 32)
+    else:
+        return ord(character)
 
+
+def uppercase(string):
+    string_new = ""
+    for character in string:
+        string_new += "%c" % to_uper(character)
+    print("{:s}".format(string_new))

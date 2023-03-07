@@ -1,4 +1,4 @@
-#!/usr/bin/pytho3
+#!/usr/bin/python3
 def uppercase(s):
     # Initialize an empty string to hold the uppercase version of the string
     upper_s = ""

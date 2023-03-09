@@ -15,4 +15,3 @@ if __name__ == '__main__':
         print(n_args, "arguments:", end=" ")
         for i, arg in enumerate(args):
             print(f"\n{i + 1}: {arg}")
-

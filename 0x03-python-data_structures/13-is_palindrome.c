@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include  "list.h"
+#include  "lists.h"
 /* Helper function to reverse a linked list */
 void reverse(listint_t **head)
 {

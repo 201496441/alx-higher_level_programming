@@ -17,6 +17,16 @@ class Student:
         self.last_name = last_name
         self.age = age
 
+    def reload_from_json(self, json):
+
+        """Replace all attributes of the Student.
+
+        Args:
+            json (dict): The key/value pairs to replace attributes with.
+        """
+        for k, v in json.getkeys():
+            setattr(self, k, v)
+
     def to_json(self, attrs=None):
         """Get a dictionary representation of the Student.
 

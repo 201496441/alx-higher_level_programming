@@ -3,7 +3,16 @@ import sys
 
 # Initialize total file size to 0 and a dictionary for status code counts
 total_file_size = 0
-status_code_count = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
+status_code_count = {
+    200: 0,
+    301: 0,
+    400: 0,
+    401: 0,
+    403: 0,
+    404: 0,
+    405: 0,
+    500: 0
+}
 
 try:
     # Loop through each line in stdin
@@ -24,7 +33,6 @@ try:
             for code in sorted(status_code_count.keys()):
                 if status_code_count[code] > 0:
                     print(f'{code}: {status_code_count[code]}')
-    
     # If the user interrupts the script with CTRL+C, print the metrics
     # up to the point where the script was interrupted
     else:

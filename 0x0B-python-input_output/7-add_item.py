@@ -34,7 +34,5 @@ def add_item(args: List[str], filename: str):
 if __name__ == '__main__':
     # remove the script name from the arguments list
     args = sys.argv[1:]
-    
     # add the arguments to the list and save to the file
     add_item(args, "add_item.json")
-

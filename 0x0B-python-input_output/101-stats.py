@@ -2,7 +2,7 @@
 import sys
 import signal
 
-# Dictionary to keep track of status codes and their counts
+
 status_code_count = {
     200: 0,
     301: 0,
@@ -22,6 +22,8 @@ line_count = 0
 # Handler function for SIGINT (keyboard interrupt)
 def print_metrics(signal, frame):
     # Print total file size
+
+
     print("Total file size: File size:", total_file_size)
 
     # Print status codes and their counts in ascending order

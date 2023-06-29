@@ -1,3 +1,3 @@
 #!/bin/bash
-# A bash Script that displays only body of response
-curl -sfL "$1"
+# Get the response body for a given URL for 200 status code responses.
+curl -sL "$1"
